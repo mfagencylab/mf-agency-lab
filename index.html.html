@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#3d4b32",
+                        "secondary-container": "#dfe5d3",
+                        "on-secondary-fixed": "#181d12",
+                        "inverse-primary": "#bcccac",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#bcccac",
+                        "on-background": "#1d1c13",
+                        "on-tertiary-fixed": "#221b0a",
+                        "secondary-fixed": "#dfe5d3",
+                        "surface-container-low": "#f9f3e4",
+                        "on-surface": "#1d1c13",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#f0e1c5",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#d8e8c7",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#d4c5aa",
+                        "inverse-surface": "#333027",
+                        "surface-tint": "#556349",
+                        "on-surface-variant": "#454840",
+                        "surface-bright": "#fff9ea",
+                        "surface-container-high": "#eee8d9",
+                        "tertiary-container": "#3f3623",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e8e2d3",
+                        "surface-container": "#f3edde",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dfdacb",
+                        "on-tertiary-fixed-variant": "#504631",
+                        "outline": "#75786f",
+                        "on-primary-fixed": "#131f0a",
+                        "on-tertiary-container": "#ac9f86",
+                        "secondary-fixed-dim": "#c3c9b8",
+                        "on-error-container": "#93000a",
+                        "background": "#fff9ea",
+                        "outline-variant": "#c5c8bd",
+                        "secondary": "#5a6053",
+                        "surface": "#fff9ea",
+                        "surface-variant": "#e8e2d3",
+                        "on-secondary": "#ffffff",
+                        "primary": "#192510",
+                        "tertiary": "#29210f",
+                        "on-primary-container": "#96a587",
+                        "inverse-on-surface": "#f6f0e1",
+                        "on-secondary-container": "#606658",
+                        "primary-container": "#2e3b24",
+                        "on-secondary-fixed-variant": "#43493c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff9ea]/80 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#192510]">
+                MF Agency Lab
+            </div>
+<div class="hidden md:flex gap-12">
+<a class="text-[#192510] font-bold border-b-2 border-[#192510] pb-1 font-manrope tracking-tight text-sm transition-all cubic-bezier(0.2, 0, 0, 1)" href="#">Home</a>
+<a class="text-[#5a6053] hover:text-[#192510] font-manrope tracking-tight font-medium text-sm transition-all cubic-bezier(0.2, 0, 0, 1) hover:opacity-80" href="#">Services</a>
+<a class="text-[#5a6053] hover:text-[#192510] font-manrope tracking-tight font-medium text-sm transition-all cubic-bezier(0.2, 0, 0, 1) hover:opacity-80" href="#">Portfolio</a>
+<a class="text-[#5a6053] hover:text-[#192510] font-manrope tracking-tight font-medium text-sm transition-all cubic-bezier(0.2, 0, 0, 1) hover:opacity-80" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-medium text-sm hover:opacity-80 transition-all cubic-bezier(0.2, 0, 0, 1)">
+                Start a Project
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block px-3 py-1 bg-primary text-on-primary rounded-full text-[0.75rem] font-bold tracking-[0.1em] mb-6">ESTABLISHED 2024</span>
+<h1 class="text-[3.5rem] md:text-[5rem] font-extrabold leading-[0.95] tracking-[-0.03em] text-primary mb-8">
+                        Transforming <br/>
+<span class="text-on-primary-container">Digital Ideas</span> <br/>
+                        Into Reality.
+                    </h1>
+<p class="text-body-lg text-secondary max-w-xl mb-10 leading-relaxed">
+                        We partner with visionary founders to build products that define the next decade of the digital economy. Precision engineering meets high-end editorial design.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-semibold text-sm hover:opacity-90 transition-all flex items-center gap-2">
+                            Free Consultation
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="text-primary px-8 py-4 rounded-md font-semibold text-sm border-b-2 border-transparent hover:border-primary transition-all">
+                            View Case Studies
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden group">
+<img alt="MF Agency Lab Brand Identity" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a high-end minimalist brand identity mockup on premium textured paper with deep green accents and elegant typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNPFac5l5bRvlS4T0wjMJVqLBW9Rxz6V1cq3B-HA4FM8Kx3PTwxrdrnOQQlJExozOmzcazY2VX76gO-jasyW4WWdGRk6MSnHoOZuBGzCbkEhyNr5reKqdB97ZZDxBwIusvHTKB45yF2poVxxZKtsxjv1v7QAr6XI13OK8yKr-w6qQZwQ4t1SKwk-ho3b13LCasskA5Wc2bizeUXxSI2enEEothMvDmurzP4Krz35hTZ6i3UdPcA1sqYKFraidxI-8WQwPgxnfmCNQC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+<!-- Asymmetrical Element -->
+<div class="absolute -bottom-12 -left-12 w-48 h-48 bg-surface-container-highest rounded-xl -z-10 hidden lg:block"></div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-surface-container-low to-transparent -z-10"></div>
+</section>
+<!-- Services Section: Bento Grid -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center lg:text-left">
+<span class="text-[0.75rem] font-bold tracking-[0.1em] text-primary mb-4 block">OUR EXPERTISE</span>
+<h2 class="text-[2.5rem] font-bold tracking-tight text-primary">High-Performance Solutions</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Feature -->
+<div class="md:col-span-2 bg-surface-container-lowest p-12 rounded-xl flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary transition-colors mb-6">design_services</span>
+<h3 class="text-2xl font-bold mb-4 group-hover:text-on-primary transition-colors">Strategic Product Design</h3>
+<p class="text-secondary group-hover:text-on-primary/80 transition-colors max-w-md">
+                                From concept to scale, we craft interfaces that are intuitive, beautiful, and driven by user behavior data.
+                            </p>
+</div>
+<div class="mt-12 flex gap-4">
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold group-hover:bg-primary-container group-hover:text-on-primary">UI/UX</span>
+<span class="px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold group-hover:bg-primary-container group-hover:text-on-primary">BRANDING</span>
+</div>
+</div>
+<!-- Small Feature -->
+<div class="bg-surface-container-lowest p-12 rounded-xl group hover:bg-secondary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary mb-6">code_blocks</span>
+<h3 class="text-2xl font-bold mb-4 group-hover:text-on-primary">Full-Stack Development</h3>
+<p class="text-secondary group-hover:text-on-primary/80">
+                            Scalable architecture built with the latest technologies to ensure your product grows with your users.
+                        </p>
+</div>
+<!-- Small Feature 2 -->
+<div class="bg-surface-container-lowest p-12 rounded-xl group hover:bg-tertiary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-tertiary mb-6">rocket_launch</span>
+<h3 class="text-2xl font-bold mb-4 group-hover:text-on-tertiary">Growth Optimization</h3>
+<p class="text-secondary group-hover:text-on-tertiary/80">
+                            Data-driven strategies to acquire, engage, and retain your most valuable customers.
+                        </p>
+</div>
+<!-- Large Feature 2 -->
+<div class="md:col-span-2 bg-surface p-12 border border-outline-variant/15 rounded-xl flex items-center justify-between overflow-hidden relative">
+<div class="z-10">
+<h3 class="text-2xl font-bold mb-4">Enterprise Transformation</h3>
+<p class="text-secondary max-w-sm">
+                                We help legacy brands navigate the digital landscape through modern architectural shifts.
+                            </p>
+<button class="mt-8 text-sm font-bold border-b border-primary pb-1">LEARN MORE</button>
+</div>
+<div class="absolute -right-10 top-10 opacity-10">
+<span class="material-symbols-outlined text-[15rem]">corporate_fare</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio: Asymmetric Layout -->
+<section class="py-32 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<span class="text-[0.75rem] font-bold tracking-[0.1em] text-primary mb-4 block">PORTFOLIO</span>
+<h2 class="text-[2.5rem] font-bold tracking-tight text-primary leading-tight">Selected works that define our standard.</h2>
+</div>
+<a class="group flex items-center gap-2 text-sm font-bold text-primary" href="#">
+                        VIEW ALL PROJECTS
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+<div class="space-y-40">
+<!-- Project 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-24">
+<div class="lg:col-span-7">
+<div class="aspect-video bg-surface-container-high rounded-xl overflow-hidden group">
+<img alt="Project Aether" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Modern mobile app interface for a premium wellness brand, featuring serene nature photography and elegant forest green UI elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmtufFWT1UR5ao2DOi9JJkdBk58NInv71avK76L_x6TcCYnRQ4hvriN3Xgp-zvYbWzFBy1Etjm9Fo1eo9JO1ZYtoKflMW1M40GmvM5tvZp5yZAi0GISKjOQIitkMewn77wJM40FWwB43KNMxkwxVKMlh7DGc50_NtMYuyf9f_L_s_WpVgOG2ZHkoWBCPdTQbOOmrKsll9N8bQFd-ZFiFZGA3x5b12p9IC_OulED8S8L-JT7NdGYwDK8jkFQDBlMhHADVlDxDEaXUOH"/>
+</div>
+</div>
+<div class="lg:col-span-5">
+<span class="text-sm font-medium text-on-secondary-container mb-4 block">01 / BRANDING &amp; PRODUCT</span>
+<h3 class="text-4xl font-bold mb-6 text-primary tracking-tight">Project Aether</h3>
+<p class="text-secondary text-lg leading-relaxed mb-8">
+                                A complete digital overhaul for a premium wellness platform, resulting in a 40% increase in user retention.
+                            </p>
+<button class="text-sm font-bold border-b-2 border-primary/20 hover:border-primary transition-colors pb-1">READ CASE STUDY</button>
+</div>
+</div>
+<!-- Project 2: Flipped -->
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-24">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<span class="text-sm font-medium text-on-secondary-container mb-4 block">02 / WEB ARCHITECTURE</span>
+<h3 class="text-4xl font-bold mb-6 text-primary tracking-tight">Kinetix Global</h3>
+<p class="text-secondary text-lg leading-relaxed mb-8">
+                                Designing a high-performance e-commerce engine for the next generation of athletic apparel.
+                            </p>
+<button class="text-sm font-bold border-b-2 border-primary/20 hover:border-primary transition-colors pb-1">READ CASE STUDY</button>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="aspect-video bg-surface-container-high rounded-xl overflow-hidden group">
+<img alt="Kinetix Global" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Dynamic e-commerce website layout showcasing high-performance sportswear with bold typography and high-contrast editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiFXtqwEHrp4DScryWb3jswUS4Tyif0tr1SPVEjjjyqWcWLy_hhxkSCJHSlzY_pPcq5do311A7qbILO9mpSOuVIwsal0cDSNMEWHPsWI5HHE8NEsRggLus1p3w241vNT_KxUTr6S6hr1LFCTkMwjfH_i4NDtlPBEP8o18dcAENC_7kEKTAPjnflCPSp0Y0vTT9USkzyGSoxLslxb4vugTTQ-v-WR1blMiIRi7vDlU3xvFskkZmYJ1A2HVB6691s5nIa5dKbAoN3ZST"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials: Minimalist Depth -->
+<section class="py-32 px-8 bg-primary">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-4">
+<h2 class="text-[2.5rem] font-bold tracking-tight text-on-primary leading-tight mb-8">Words from our partners.</h2>
+<div class="flex gap-2">
+<div class="w-12 h-1 bg-on-primary/30"></div>
+<div class="w-12 h-1 bg-on-primary"></div>
+<div class="w-12 h-1 bg-on-primary/30"></div>
+</div>
+</div>
+<div class="lg:col-span-8">
+<div class="relative">
+<span class="material-symbols-outlined text-[6rem] text-on-primary/5 absolute -top-12 -left-12">format_quote</span>
+<blockquote class="relative z-10">
+<p class="text-2xl md:text-3xl text-on-primary font-medium leading-relaxed italic mb-10">
+                                    "MF Agency Lab doesn't just build websites; they build digital experiences that command attention. Their attention to detail and editorial eye transformed our brand into a market leader."
+                                </p>
+<footer class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-on-primary/20">
+<img alt="Client Portrait" class="w-full h-full object-cover" data-alt="Professional portrait of a middle-aged female executive with a confident expression in a bright modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Eia91CMWiMFWuCmlKWtWqD_SnC622Pj1Bl5VCTezcqxYCQ_lHbwY35WyIR6uVaNc-1ylL9x_iuZNfSZMZnrPKyu3R_pQXdIpcBHgzsw2Vi4A__WrKGCmBWuWurptPkJjIyvd1HhfUScVvO-b1Qi67051dXPH5r9rIhMbryjS9BOmZ18GDK3I_wujGANPxfveNm5yv6vxwLJYPrN004DavXnYgqn_kvU_51aey3hzgugefBGJJVF9_fraqjt9PhmMukOLAsYv4dsc"/>
+</div>
+<div>
+<cite class="text-on-primary font-bold not-italic text-lg">Eleanor Vance</cite>
+<p class="text-on-primary/60 text-sm">CEO, Vesper Dynamics</p>
+</div>
+</footer>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8">
+<div class="max-w-5xl mx-auto text-center">
+<h2 class="text-[3rem] md:text-[4rem] font-extrabold tracking-tight text-primary mb-12">Ready to start your lab session?</h2>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-md font-bold text-lg hover:scale-[1.02] transition-transform duration-300">
+                    Book a Free Consultation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-8 bg-[#f9f3e4] dark:bg-[#2e3b24]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-[#192510] dark:text-[#fff9ea]">MF Agency Lab</div>
+<p class="text-[#5a6053] dark:text-[#c5c8bd] max-w-xs font-manrope text-sm leading-relaxed">
+                    A boutique digital atelier specializing in high-performance product design and engineering.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-[#192510] dark:text-[#fff9ea] mb-6 uppercase text-xs tracking-widest">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">Services</a></li>
+<li><a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">Case Studies</a></li>
+<li><a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">Process</a></li>
+<li><a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#192510] dark:text-[#fff9ea] mb-6 uppercase text-xs tracking-widest">Connect</h4>
+<div class="flex flex-col gap-4">
+<a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">LinkedIn</a>
+<a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">Instagram</a>
+<a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">Behance</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-[#5a6053] dark:text-[#c5c8bd] font-manrope text-sm">
+                © 2024 MF Agency Lab. All rights reserved.
+            </div>
+<div class="flex gap-8">
+<a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">Privacy Policy</a>
+<a class="text-[#5a6053] dark:text-[#c5c8bd] hover:underline decoration-primary transition-all font-manrope text-sm" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
